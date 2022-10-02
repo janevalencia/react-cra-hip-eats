@@ -4,7 +4,7 @@ import { BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { FaWallet, FaUserFriends } from "react-icons/fa";
-import { Portals } from "./";
+import Portals from "./Portals";
 
 // Define Sidebar props.
 type SidebarProps = {
