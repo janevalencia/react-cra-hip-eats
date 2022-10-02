@@ -4,6 +4,6 @@
 
 @layer base {
   button {
-      @apply tw-border tw-border-black tw-rounded-md tw-px-5 tw-py-1
+      @apply border border-black rounded-md px-5 py-1
   }
 }
