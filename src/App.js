@@ -1,9 +1,10 @@
-import { Hero } from "./components";
+import { Hero, FeaturedGrid } from "./components";
 
 function App() {
   return (
     <div className="App">
       <Hero />
+      <FeaturedGrid />
     </div>
   );
 }
