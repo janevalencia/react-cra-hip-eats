@@ -12,13 +12,13 @@ type FooterProps = {
 } & typeof defaultFooterProps;
 
 // Render Footer component.
-const Footer = ( {author, year} : FooterProps ) => {
+const Footer = ({author, year} : FooterProps) => {
     return (
         <footer>
             {/* Author, Copyright, Brand */}
             <div className="footer__brand-copyright">
                 <span>Hip Eats</span>
-                <p>Copyright &copy; { year } { author }. All rights reserved.</p>
+                <p>Copyright &copy; {year} {author}. All rights reserved.</p>
             </div>
         </footer>
     );
