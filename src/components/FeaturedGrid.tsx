@@ -4,6 +4,7 @@ import { Card } from "./";
 import { featured } from "../data/sample.js";
 
 const FeaturedGrid = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [items, setItems] = useState<FeaturedItem[] | []>(featured);
 
     return (
