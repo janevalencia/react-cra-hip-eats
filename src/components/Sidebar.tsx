@@ -23,7 +23,7 @@ const Sidebar = ({isShown, setShown, brand} : SidebarProps) => {
     return (
         <Portals wrapperId="portal-sidebar-menu-overlay">
             {/* Overlay */}
-            <div className="bg-black/60 fixed w-full h-screen top-0 left-0"></div>
+            <div onClick={() => setShown(prev => !prev)} className="bg-black/60 fixed w-full h-screen top-0 left-0"></div>
 
             {/* Sidebar-menu */}
             <div className={isShown ? 
