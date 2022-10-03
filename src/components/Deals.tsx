@@ -12,7 +12,7 @@ const Deals = () => {
   return (
     <div className="max-w-[1640px] m-auto p-4">
       <h1 className="text-lime-600 font-bold text-4xl text-center mb-2">
-        More Deals
+        Find Out More
       </h1>
       {/* Categories */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">

@@ -1,4 +1,4 @@
-import { Hero, FeaturedGrid, FoodList } from "./components";
+import { Hero, FeaturedGrid, FoodList, Deals } from "./components";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Hero />
       <FeaturedGrid />
       <FoodList />
+      <Deals />
     </div>
   );
 }
