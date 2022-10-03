@@ -9,11 +9,11 @@ export const data = [
   },
   {
     id: 2,
-    name: "Bacon Cheeseburger",
-    category: "burger",
+    name: "Herbs Pasta",
+    category: "italian",
     image:
-      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
-    price: "$",
+      "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    price: "$$$",
   },
   {
     id: 3,
@@ -25,16 +25,16 @@ export const data = [
   },
   {
     id: 4,
-    name: "Loaded Burger",
-    category: "burger",
+    name: "Granola",
+    category: "salad",
     image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60",
-    price: "$$$",
+      "https://images.unsplash.com/photo-1621470626764-0e8c9303800a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    price: "$",
   },
   {
     id: 5,
     name: "Feta & Spinnach",
-    category: "pizza",
+    category: "italian",
     image:
       "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     price: "$$",
@@ -42,7 +42,7 @@ export const data = [
   {
     id: 6,
     name: "Supreme Pizza",
-    category: "pizza",
+    category: "italian",
     image:
       "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     price: "$$$",
@@ -50,7 +50,7 @@ export const data = [
   {
     id: 7,
     name: "Meat Lovers",
-    category: "pizza",
+    category: "italian",
     image:
       "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     price: "$$$$",
@@ -58,7 +58,7 @@ export const data = [
   {
     id: 8,
     name: "Cheese Pizza",
-    category: "pizza",
+    category: "italian",
     image:
       "https://images.unsplash.com/photo-1548369937-47519962c11a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hlZXNlJTIwcGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     price: "$",
@@ -101,14 +101,13 @@ export const data = [
     category: "chicken",
     image:
       "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    price: "$$",
+    price: "$",
   },
   {
     id: 14,
-    name: "Baked Chicken",
+    name: "Baked Chicken Basil",
     category: "chicken",
-    image:
-      "https://images.unsplash.com/photo-1594221708779-94832f4320d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    image: "https://images.pexels.com/photos/6210933/pexels-photo-6210933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     price: "$$$$",
   },
   {
@@ -121,24 +120,24 @@ export const data = [
   },
   {
     id: 16,
-    name: "Chicken Kabob",
+    name: "Chicken Kebab",
     category: "chicken",
     image:
       "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    price: "$$$",
+    price: "$$",
   },
 ];
 
 export const categories = [
   {
     id: 1,
-    name: "Fast Food",
+    name: "Healthy Choice",
     image:
       "https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/FastFood_BrowseHome@3x.png",
   },
   {
     id: 2,
-    name: "Pizza",
+    name: "Italian",
     image:
       "https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Pizza_BrowseHome@3x.png",
   },
@@ -162,7 +161,7 @@ export const categories = [
   },
   {
     id: 6,
-    name: "Restaurant Rewards",
+    name: "HIP Rewards",
     image:
       "https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/RestoRewards_BrowseHome@3x.png",
   },
@@ -174,7 +173,7 @@ export const categories = [
   },
   {
     id: 8,
-    name: "Shipped Free",
+    name: "Free Deals",
     image:
       "https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Placeholder_Plates@3x.png",
   },

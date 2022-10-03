@@ -29,13 +29,13 @@ const Sidebar = ({isShown, setShown, brand} : SidebarProps) => {
             <div className={isShown ? 
                                 `fixed top-0 left-0 w-[300px] h-screen bg-white duration-300 shadow-black shadow-md` : 
                                 `fixed top-0 left-[-100%] w-[300px] h-screen bg-white duration-300 shadow-black shadow-md`}>
-                <AiOutlineClose 
-                    size={30}
-                    className="absolute top-4 right-4 cursor-pointer"
-                    onClick={() => setShown(prev => !prev)}
-                />
-                <div className="p-4">
+                <div className="flex justify-between items-center p-4">
                     {brand}
+                    <AiOutlineClose 
+                        size={30}
+                        className="cursor-pointer"
+                        onClick={() => setShown(prev => !prev)}
+                    />
                 </div>
                 <nav>
                     <ul className='flex flex-col p-6 text-gray-800'>

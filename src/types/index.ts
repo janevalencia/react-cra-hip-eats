@@ -5,13 +5,13 @@ export type FeaturedItem = {
     image: string
 }
 
-export type Category = {
+export type CategoryType = {
     id: number,
     name: string,
     image: string
 }
 
-export type Food = {
+export type FoodType = {
     id: number,
     name: string,
     category: string,
