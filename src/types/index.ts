@@ -5,7 +5,7 @@ export type FeaturedItem = {
     image: string
 }
 
-export type CategoryType = {
+export type Deal = {
     id: number,
     name: string,
     image: string
