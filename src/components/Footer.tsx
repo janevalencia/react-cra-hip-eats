@@ -1,7 +1,7 @@
 import React from "react";
-import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { IoLogoAppleAppstore } from "react-icons/io5";
-import { AiFillAndroid } from "react-icons/ai";
+import { AiFillAndroid, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { HiTranslate } from "react-icons/hi";
 
 // Default Footer props.
@@ -56,17 +56,23 @@ const Footer = ({ author, year }: FooterProps) => {
       {/* Social Media, Privacy */}
       <div className="grid md:grid-cols-2 w-full border-t-2 border-slate-100 py-4 mt-4">
         <div className="flex justify-start items-center gap-4 max-w-[100px]">
-          <BsFacebook
-            size={20}
-            className="cursor-pointer"
-          />
-          <BsTwitter size={20} className="cursor-pointer" />
-          <BsInstagram
-            size={20}
-            className="cursor-pointer"
-          />
+          <a href="https://github.com/janevalencia/hip-eats" target="_blank" rel="noreferrer">
+            <AiFillGithub
+              size={20}
+              className="cursor-pointer"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/janevalencia/" target="_blank" rel="noreferrer">
+            <AiFillLinkedin size={20} className="cursor-pointer" />
+          </a>
+          <a href="https://www.instagram.com/janevlencia" target="_blank" rel="noreferrer">
+            <BsInstagram
+              size={20}
+              className="cursor-pointer"
+            />
+          </a>
         </div>
-        <div className="flex flex-col md:flex-row md:justify-end gap-4 py-4">
+        <div className="flex flex-col md:flex-row md:justify-end gap-4 py-4 text-sm">
           <span className="cursor-pointer hover:underline text-gray-500">Privacy Policy</span>
           <span className="cursor-pointer hover:underline text-gray-500">T&C</span>
           <span className="cursor-pointer hover:underline text-gray-500">Pricing</span>
