@@ -33,14 +33,14 @@ const Footer = ({ author, year }: FooterProps) => {
 
         {/* Footer Nav-Links */}
         <div className="flex flex-col gap-4 py-4 md:py-0 lg:flex-row justify-start items-start">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mr-28">
             <span className="cursor-pointer hover:underline text-gray-500">Get Help</span>
             <span className="cursor-pointer hover:underline text-gray-500">Buy Gift Cards</span>
             <span className="cursor-pointer hover:underline text-gray-500">Add Your Restaurant</span>
             <span className="cursor-pointer hover:underline text-gray-500">Create A Business Account</span>
             <span className="cursor-pointer hover:underline text-gray-500">Promotions</span>
           </div>
-          <div className="flex flex-col gap-4 lg:ml-32">
+          <div className="flex flex-col gap-4">
             <span className="cursor-pointer hover:underline text-gray-500">Restaurants Near Me</span>
             <span className="cursor-pointer hover:underline text-gray-500">View All Cities</span>
             <span className="cursor-pointer hover:underline text-gray-500">View All Countries</span>
