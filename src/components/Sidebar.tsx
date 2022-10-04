@@ -40,7 +40,11 @@ const Sidebar = ({isShown, setShown, brand} : SidebarProps) => {
                 </div>
                 <nav>
                     <ul className='flex flex-col p-6 text-gray-800'>
-                        <li className='text-xl py-4 flex'><TbTruckDelivery size={25} className='mr-4' /> 
+                        <li 
+                            className='text-xl py-4 flex'
+                            onClick={() => setShown(prev => !prev)}
+                        >
+                            <TbTruckDelivery size={25} className='mr-4' /> 
                             <Link to={`/orders`}>Orders</Link>
                         </li>
                         <li className='text-xl py-4 flex'><MdFavorite size={25} className='mr-4' /> Favorites</li>
