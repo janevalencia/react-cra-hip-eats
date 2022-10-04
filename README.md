@@ -30,7 +30,6 @@ TBA: How to clone the project and run it locally guideline.
 
 User should be able to enjoy the following features of Hip-Eats:
 
-- Search for food
 - View list of top-rated food
 - Filter list of top-rated food by categories
 - Filter list of top-rated food by pricing
@@ -40,13 +39,13 @@ User should be able to enjoy the following features of Hip-Eats:
 
 ## Scope
 
-- [ ] Fetch data from *src/data/sample.js* to simulate API response
+- [x] Fetch data from *src/data/sample.js* to simulate API response
 - [ ] *Bonus:* Fetch food data from Free Meal API https://www.themealdb.com/api.php 
 - [ ] *Upgrade:* Fetch food data from CMS
-- [ ] Responsive layout with TailwindCSS flexbox and grid
-- [ ] Mobile-friendly
-- [ ] Able to filter menu items by category: All, Burgers, Pizza, etc
-- [ ] Able to filter menu items by pricing
+- [x] Responsive layout with TailwindCSS flexbox and grid
+- [x] Mobile-friendly
+- [x] Able to filter menu items by category: All, Burgers, Italian, etc
+- [x] Able to filter menu items by pricing
 - [ ] Able to add/remove food-item to/from cart
 - [ ] *Upgrade:* Run e2e regression testing on CI/CD pipeline
 
@@ -62,4 +61,4 @@ Connect with me:
 - [LinkedIn](https://www.linkedin.com/in/janevalencia/)
 - [Medium](https://medium.com/@janevalencia)
 
-Have fun building!
+Have fun building 🚀
