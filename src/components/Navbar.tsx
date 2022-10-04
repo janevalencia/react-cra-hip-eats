@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import { Search, Sidebar } from "./";
 
 // Default Brand props.
@@ -28,7 +29,7 @@ const Navbar = ({brand} : typeof defaultBrandProp) => {
         >
           <AiOutlineMenu size={30} />
         </div>
-        {brand}
+        <Link to={`/`}>{brand}</Link>
         <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
           <p className="bg-black text-white rounded-full p-2">Delivery</p>
           <p className="p-2">Pickup</p>
@@ -40,10 +41,12 @@ const Navbar = ({brand} : typeof defaultBrandProp) => {
 
       {/* Cart Menu */}
       <div className="bg-black text-white rounded-full py-2">
-        <button className="flex items-center gap-x-2 border-none">
-          <BsFillCartFill />
-          <span className="hidden lg:block">Cart</span>
-        </button>
+        <Link to={`/orders`}>
+          <button className="flex items-center gap-x-2 border-none">
+            <BsFillCartFill />
+            <span className="hidden lg:block">Cart</span>
+          </button>
+        </Link>
       </div>
 
       {/* Mobile Nav */}

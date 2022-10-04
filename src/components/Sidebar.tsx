@@ -4,6 +4,7 @@ import { BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { FaWallet, FaUserFriends } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Portals from "./Portals";
 
 // Define Sidebar props.
@@ -39,7 +40,9 @@ const Sidebar = ({isShown, setShown, brand} : SidebarProps) => {
                 </div>
                 <nav>
                     <ul className='flex flex-col p-6 text-gray-800'>
-                        <li className='text-xl py-4 flex'><TbTruckDelivery size={25} className='mr-4' /> Orders</li>
+                        <li className='text-xl py-4 flex'><TbTruckDelivery size={25} className='mr-4' /> 
+                            <Link to={`/orders`}>Orders</Link>
+                        </li>
                         <li className='text-xl py-4 flex'><MdFavorite size={25} className='mr-4' /> Favorites</li>
                         <li className='text-xl py-4 flex'><FaWallet size={25} className='mr-4' /> Wallet</li>
                         <li className='text-xl py-4 flex'><MdHelp size={25} className='mr-4' /> Help</li>
