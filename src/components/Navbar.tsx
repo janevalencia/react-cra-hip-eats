@@ -21,6 +21,9 @@ const Navbar = ({ brand }: typeof defaultBrandProp) => {
     // Manage Cart amount.
     const [cartNo, setCartNo] = useState<number>(0);
 
+    // Manage Delivery-Pickup toggle.
+    const [toggle, setToggle] = useState<boolean>(true);
+
     // React-router location.
     let location = useLocation();
 
@@ -45,10 +48,18 @@ const Navbar = ({ brand }: typeof defaultBrandProp) => {
                 </div>
                 <Link to={`/`}>{brand}</Link>
                 <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
-                    <p className="bg-black text-white rounded-full p-2">
+                    <button 
+                        className={toggle ? `bg-black text-white rounded-full p-2` : `border-none rounded-full p-2`}
+                        onClick={() => setToggle(!toggle)}
+                    >
                         Delivery
-                    </p>
-                    <p className="p-2">Pickup</p>
+                    </button>
+                    <button 
+                        className={!toggle ? `bg-black text-white rounded-full p-2` : `border-none rounded-full p-2`}
+                        onClick={() => setToggle(!toggle)}
+                    >
+                        Pickup
+                    </button>
                 </div>
             </div>
 
