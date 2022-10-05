@@ -1,52 +1,50 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // Define Card props.
 type CardProps = {
-    title: string,
-    subtitle?: string,
-    ctaText: string,
-    imageUrl: string
-}
+    title: string;
+    subtitle?: string;
+    ctaText: string;
+    imageUrl: string;
+};
 
 // Render Card component.
-const Card = ({title, subtitle, ctaText, imageUrl} : CardProps) => {
+const Card = ({ title, subtitle, ctaText, imageUrl }: CardProps) => {
     
+    // React-routing navigate.
+    let navigate = useNavigate();
+
     // Save item to localStorage to be displayed on Cart.
     const addToCart = () => {
-        let storage = localStorage.getItem('orders');
+        let orders: string[] = [];
+        let storage = localStorage.getItem("orders");
+
+        // If storage exists, parsing the localStorage into JS Object.
         if (storage) {
-            // Parsing the localStorage into JS Object.
-            let storedCart : string[] = JSON.parse(storage);
-
-            // Push new item to storedCart.
-            storedCart.push(title);
-
-            // Save back the localStorage.
-            localStorage.setItem('orders', JSON.stringify(storedCart));
-        } else {
-            // Create new localStorage item called orders.
-            let orders : string[] = [];
-
-            // Push new item to storedCart.
-            orders.push(title);
-
-            // Save back the localStorage.
-            localStorage.setItem('orders', JSON.stringify(orders));
+            orders = JSON.parse(storage);
         }
 
-        window.location.reload();
-    }
+        // Push new item to orders.
+        orders.push(title);
+
+        // Save orders back the localStorage.
+        localStorage.setItem("orders", JSON.stringify(orders));
+
+        // Refresh routing.
+        navigate('/');
+    };
 
     // Render.
     return (
-        <div className='rounded-xl relative'>
+        <div className="rounded-xl relative">
             {/* Overlay */}
-            <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-                <p className='font-bold text-xl px-3 pt-4'>{title}</p>
-                <p className='px-3'>{subtitle}</p>
-                <button 
+            <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
+                <p className="font-bold text-xl px-3 pt-4">{title}</p>
+                <p className="px-3">{subtitle}</p>
+                <button
                     onClick={addToCart}
-                    className='absolute border-white bg-white text-black mx-3 bottom-4 rounded-full py-2 hover:bg-transparent hover:text-white duration-500'
+                    className="absolute border-white bg-white text-black mx-3 bottom-4 rounded-full py-2 hover:bg-transparent hover:text-white duration-500"
                 >
                     {ctaText}
                 </button>
@@ -54,12 +52,12 @@ const Card = ({title, subtitle, ctaText, imageUrl} : CardProps) => {
 
             {/* Card Image */}
             <img
-                className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
+                className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
                 src={imageUrl}
                 alt={title}
             />
         </div>
     );
-}
+};
 
 export default Card;
