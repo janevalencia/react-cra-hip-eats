@@ -16,7 +16,7 @@ const Orders = () => {
         if (storage) {
             setOrders(JSON.parse(storage));
         }
-    }, [orders]);
+    }, []);
 
     // Remove item from orders localStorage.
     const removeFromCart = (index: number) => {
